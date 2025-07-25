@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>I'm Sorry 💔</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to top right, #ff9a9e, #fad0c4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .container {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(15px);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(255, 0, 0, 0.2);
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #fff;
+      animation: heartbeat 1.5s infinite;
+    }
+
+    p {
+      color: #fff;
+      font-size: 1.3em;
+      margin: 20px 0;
+    }
+
+    button {
+      background-color: #fff;
+      color: #ff4e4e;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 30px;
+      font-size: 1em;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      transition: 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #ff4e4e;
+      color: #fff;
+      transform: scale(1.05);
+    }
+
+    @keyframes heartbeat {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>I'm Really Sorry 😔</h1>
+    <p>
+      I never meant to hurt you.<br>
+      You mean so much to me.<br>
+      Please forgive me?
+    </p>
+    <button onclick="alert('Aww, Thank you for forgiving me ❤️')">Tap to Forgive Me</button>
+  </div>
+</body>
+</html>
